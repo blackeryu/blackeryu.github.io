@@ -1,5 +1,5 @@
 //=============================================================================
-// rpg_managers.js v1.5.1
+// rpg_managers.js v1.6.1
 //=============================================================================
 
 //-----------------------------------------------------------------------------
@@ -882,7 +882,7 @@ ImageManager.loadNormalBitmap = function(path, hue) {
     var key = this._generateCacheKey(path, hue);
     var bitmap = this._imageCache.get(key);
     if (!bitmap) {
-        bitmap = Bitmap.load(path);
+        bitmap = Bitmap.load(decodeURIComponent(path));
         bitmap.addLoadListener(function() {
             bitmap.rotateHue(hue);
         });
@@ -2274,7 +2274,7 @@ BattleManager.updateEvent = function() {
                 return this.updateEventMain();
             }
     }
-    return this.checkAbort2();
+    return this.checkAbort();
 };
 
 BattleManager.updateEventMain = function() {
@@ -2622,14 +2622,6 @@ BattleManager.checkBattleEnd = function() {
 };
 
 BattleManager.checkAbort = function() {
-    if ($gameParty.isEmpty() || this.isAborting()) {
-        this.processAbort();
-        return true;
-    }
-    return false;
-};
-
-BattleManager.checkAbort2 = function() {
     if ($gameParty.isEmpty() || this.isAborting()) {
         SoundManager.playEscape();
         this._escaped = true;
