@@ -1,8 +1,0 @@
-[
-null,
-{"id":1,"expanded":true,"name":"只有旅館的小鎮","order":1,"parentId":0,"scrollX":982.8,"scrollY":543},
-{"id":2,"expanded":false,"name":"旅館","order":2,"parentId":1,"scrollX":982.8,"scrollY":543},
-{"id":3,"expanded":false,"name":"魔王的家","order":3,"parentId":0,"scrollX":973.1999999999999,"scrollY":642.6},
-{"id":4,"expanded":true,"name":"沒有旅館的小鎮","order":4,"parentId":0,"scrollX":982.8,"scrollY":543},
-{"id":5,"expanded":false,"name":"主角家","order":5,"parentId":4,"scrollX":832,"scrollY":640}
-]

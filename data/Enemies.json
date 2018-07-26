@@ -1,4 +1,0 @@
-[
-null,
-{"id":1,"actions":[{"conditionParam1":3,"conditionParam2":0,"conditionType":1,"rating":5,"skillId":11}],"battlerHue":316,"battlerName":"God","dropItems":[{"dataId":1,"denominator":1,"kind":0},{"dataId":1,"denominator":1,"kind":0},{"dataId":1,"denominator":1,"kind":0}],"exp":0,"traits":[],"gold":0,"name":"旅店老奶奶","note":"","params":[100,0,10,10,10,10,10,10]}
-]
